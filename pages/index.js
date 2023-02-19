@@ -1215,7 +1215,7 @@ export default function Home({ publications }) {
               <FeaturedProjectCard
                   title={"My Portfolio"}
                   status={"Herman Makiese's presentation"}
-                  description={`Mon projet web mini portfolio, conçu avec les technologies React, NextJs, Tailwind et Sass, offre un design épuré et dynamique agrémenté d'effets interactifs captivants. Des animations soignées ajoutent une touche de vie et de mouvement à l'ensemble, pour une expérience utilisateur immersive et stimulante.`}
+                  description={`Mon projet web mini portfolio, conçu avec les technologies React, NextJs, Tailwind ... offre un design épuré et dynamique agrémenté d'effets interactifs captivants. Des animations soignées ajoutent une touche de vie et de mouvement à l'ensemble, pour une expérience utilisateur immersive et stimulante.`}
                   float={`right-0`}
                   flexDirection={`flex-col lg:flex-row-reverse`}
                   imgWidth={"1366"}
