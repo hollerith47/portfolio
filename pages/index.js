@@ -16,11 +16,11 @@ import ReactJs from "../components/icons/ReactJs";
 import NextJs from "../components/icons/NextJs";
 import NodeJs from "../components/icons/NodeJs";
 import Firebase from "../components/icons/Firebase";
-import Figma from "../components/icons/Figma";
+import Java from "../components/icons/Java";
 import Photoshop from "../components/icons/Photoshop";
-import Illustrator from "../components/icons/Illustrator";
-import AfterEffects from "../components/icons/AfterEffects";
-import AdobeXd from "../components/icons/AdobeXd";
+import Csharp from "../components/icons/Csharp";
+import Python from "../components/icons/python";
+import Php from "../components/icons/Php";
 // Project Card
 import ProjectCard from "../components/ProjectCard";
 import GitHubProfile from "../components/icons/GitHubProfile";
@@ -28,60 +28,62 @@ import TwitterProfile from "../components/icons/TwitterProfile";
 import LinkedInProfile from "../components/icons/LinkedInProfile";
 import FeaturedProjectCard from "../components/FeaturedProjectCard";
 
-// Blog Components
-import BlogList from "../components/blog/BlogList";
-import BlogItem from "../components/blog/BlogItem";
-
 // Dark Mode
 import { useTheme } from "next-themes";
-import Supabase from "../components/icons/Supabase";
 import MongoDb from "../components/icons/MongoDb";
 import Express from "../components/icons/Express";
+import php from "../components/icons/Php";
+import html from "../components/icons/Html";
 
 const projects = [
   {
-    title: "Yodlr",
+    title: "Country App",
     overview:
-      "Shoutout a Twitter user, and generate a profile card in under a minute. Simply find the user, select the style, edit the colors and download the card.",
-    stack: ["Html", "Tailwind", "React", "Next"],
-    link: "http://yodlr.vercel.app",
-    repo: "https://github.com/danielcranney/yodlr",
+      "Explorez le monde avec Country App ! Répertoriant les pays par continent avec des informations clés telles que " +
+      "la superficie et la population, ce site web dynamique et convivial a été développé avec React, API Axios et Sass pour offrir une expérience utilisateur fluide et agréable.",
+    stack: ["React", "Sass", "AXIOS"],
+    link: "https://me.htech-cloud.com/myproject/country-app",
+    repo: "https://github.com/hollerith47/Country-app",
     isSiteLive: true,
   },
   {
-    title: "Rate My Film",
+    title: "Clone Facebook",
     overview:
-      "A single-page application that helps filmmakers learn more about who their film might be suitable for.",
-    stack: ["Html", "React", "Sass"],
-    link: "http://www.ratemyfilm.co.uk",
-    repo: "https://github.com/danielcranney/rate-my-film",
+      "Découvrez mon projet de clone de la page d'accueil de Facebook ! Avec HTML5, CSS et JavaScript, j'ai créé une " +
+      "version fidèle de cette interface emblématique. Explorez ses fonctionnalités et son design pour vous immerger dans l'univers de Facebook.",
+    stack: ["Html", "Css", "Javascript"],
+    link: "https://me.htech-cloud.com/myproject/country-app",
+    repo: "https://github.com/hollerith47/clone-login-page-facebook",
     isSiteLive: true,
   },
   {
-    title: "Spotlight Media",
+    title: "OuiTube",
     overview:
-      "The website for my corporate videography company. This features a contact form powered by NodeJs and SendGrid.",
-    stack: ["Html", "ReactJs", "Next", "Node"],
-    link: "http://www.wearespotlight.co.uk",
-    repo: "https://github.com/danielcranney/spotlight-media",
+      "Découvrez OuiTube, mon projet de clone de la page YouTube ! Avec HTML5, CSS et JavaScript, j'ai recréé les " +
+      "fonctionnalités et le design de cette célèbre plateforme de vidéo en ligne. Explorez ses différentes sections " +
+      "et profitez d'une expérience immersive sur OuiTube.",
+    stack: ["Html", "CSS3", "JavaScript"],
+    link: "https://me.htech-cloud.com/myproject/ouitube",
+    repo: "https://github.com/hollerith47/clone-youtube",
     isSiteLive: true,
   },
   {
-    title: "Quotr",
+    title: "Cooking App",
     overview:
-      "A simple application built to help tradespeople automate the quotation process.",
-    stack: ["Html", "React", "Next"],
-    link: "https://quotr.vercel.app",
+      "Explorez le monde de la cuisine avec Cooking App ! Avec React, Axios et Sass, découvrez des recettes savoureuses " +
+      "et trouvez facilement celle qui vous convient grâce à notre barre de recherche.",
+    stack: ["React", "API Axios", "CSS3"],
+    link: "https://me.htech-cloud.com/myproject/cooking-app",
+    repo: "https://github.com/hollerith47/cooking-app",
+    isSiteLive: true,
+  },
+  {
+    title: "H Tech mini-portfolio",
+    overview:
+      "Mon mini portfolio est un projet web dynamique réalisé avec React et Sass. Il présente un design épuré avec des effets de souris interactifs et des animations qui le rendent vivant. Avec une mise en page claire et concise, ce mini portfolio met en valeur mes compétences et mon expertise de manière engageante et conviviale.",
+    stack: ["React", "API Axios", "Sass"],
+    link: "https://me.htech-cloud.com/myproject/mini-portfolio",
     repo: null,
-    isSiteLive: true,
-  },
-  {
-    title: "GPS Embroidery",
-    overview:
-      "A fully-responsive and quick-rendering image-based website for an ongoing academic project.",
-    stack: ["Html", "React", "Next"],
-    link: "http://www.gps-embroidery.com",
-    repo: "https://github.com/danielcranney/GPS-Embroidery",
     isSiteLive: true,
   },
 ];
@@ -233,10 +235,10 @@ export default function Home({ publications }) {
         }`}
       >
         <Head>
-          <title>Daniel Cranney | Frontend Developer & Designer</title>
+          <title>Herman Makiese | Frontend Developer </title>
           <meta
             name="description"
-            content="The portfolio of frontend developer and designer, Daniel Cranney"
+            content="The portfolio of frontend developer, Herman Makiese"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -270,7 +272,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
-                    href="#"
                     className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
                       visibleSection === "about"
                         ? "selected delay-150"
@@ -286,7 +287,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
-                    href="#"
                     className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
                       visibleSection === "skills"
                         ? "selected delay-150"
@@ -318,7 +318,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
-                    href="#"
                     target="_blank"
                     rel="noreferrer"
                     className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
@@ -336,7 +335,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
-                    href="#"
                     className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
                       visibleSection === "contact"
                         ? "selected delay-150"
@@ -352,10 +350,10 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-40 block py-2 mt-6 list-none lg:inline-block">
                   <a
-                    href={`mailto:danielcranney@gmail.com`}
+                    href={`mailto:makieseherman@gmail.com`}
                     className="text-lg btn-brand btn-lg group"
                   >
-                    Hire me
+                    Need help?
                   </a>
                 </li>
               </ul>
@@ -376,63 +374,12 @@ export default function Home({ publications }) {
           <div className="container relative flex items-center mx-auto">
             {/* Logo */}
             <div className="z-50 w-9 sm:w-12 h-9 sm:h-12 flex items-center">
-              <svg
-                id="b613d120-e911-4f71-b7bc-d9b9e1bbdc6f"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 93.13 75.2"
-              >
-                <rect
-                  className="fill-current text-brand"
-                  x="-3.43"
-                  y="39.29"
-                  width="32.19"
-                  height="8.78"
-                  rx="4.39"
-                  transform="translate(-27.18 21.75) rotate(-45)"
-                />
-                <rect
-                  className="fill-current text-brand"
-                  x="-3.43"
-                  y="22.74"
-                  width="32.19"
-                  height="8.78"
-                  rx="4.39"
-                  transform="translate(22.89 -1.01) rotate(45)"
-                />
-                <rect
-                  className="fill-current text-brand"
-                  x="64.37"
-                  y="22.74"
-                  width="32.19"
-                  height="8.78"
-                  rx="4.39"
-                  transform="translate(156.55 -10.59) rotate(135)"
-                />
-                <rect
-                  className="fill-current text-brand"
-                  x="64.37"
-                  y="39.29"
-                  width="32.19"
-                  height="8.78"
-                  rx="4.39"
-                  transform="translate(106.48 131.47) rotate(-135)"
-                />
-                <rect
-                  className="fill-current text-brand"
-                  x="41.93"
-                  y="-1.17"
-                  width="8.78"
-                  height="77.54"
-                  rx="4.39"
-                  transform="translate(11.31 -10.71) rotate(15)"
-                />
-              </svg>
+              <img src="Htech_favicon.svg" alt="H tech" />
             </div>
             {/* Text */}
             <div className="flex items-center ml-4">
               <p className="text-lg font-semibold font-display tracking-tight dark:text-white text-darker mb-0 transition-all duration-150 ease-in-out">
-                Daniel Cranney
+                Herman Makiese
               </p>
             </div>
             {/* Nav */}
@@ -440,7 +387,6 @@ export default function Home({ publications }) {
               <ul className="z-50 flex items-center">
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
-                    href="#"
                     className={`header_link font-semibold transition-all duration-150 ease-in-out ${
                       visibleSection === "home"
                         ? "selected delay-150"
@@ -455,7 +401,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
-                    href="#"
                     className={`header_link font-semibold transition-all duration-150 ease-in-out ${
                       visibleSection === "about"
                         ? "selected delay-150"
@@ -470,7 +415,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
-                    href="#"
                     className={`header_link font-semibold transition-all duration-150 ease-in-out ${
                       visibleSection === "skills"
                         ? "selected delay-150"
@@ -485,7 +429,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
-                    href="#"
                     className={`header_link font-semibold transition-all duration-150 ease-in-out ${
                       visibleSection === "my-work"
                         ? "selected delay-150"
@@ -500,7 +443,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
-                    href="#"
                     target="_blank"
                     rel="noreferrer"
                     className={`header_link font-semibold transition-all duration-150 ease-in-out ${
@@ -517,7 +459,6 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
-                    href="#"
                     className={`header_link font-semibold transition-all duration-150 ease-in-out ${
                       visibleSection === "contact"
                         ? "selected delay-150"
@@ -532,10 +473,10 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 hidden ml-5 list-none lg:inline-block">
                   <a
-                    href={`mailto:danielcranney@gmail.com`}
+                    href={`mailto:makieseherman@gmail.com`}
                     className="btn-brand btn-md group"
                   >
-                    Hire me
+                    Need help?
                   </a>
                 </li>
                 <li className="z-50 inline-block list-none lg:hidden group">
@@ -597,24 +538,24 @@ export default function Home({ publications }) {
                 </span>
 
                 <h1 className="mb-4 text-5xl md:text-7xl dark:text-white text-dark">
-                  Daniel Cranney
+                  Herman Makiese
                 </h1>
-                <h2 className="mb-4 text-3xl md:text-4xl dark:text-light text-mid">
+                <h2 className="mb-4 text-2xl md:text-3xl dark:text-light text-mid">
                   <ReactTypingEffect
                     typingDelay={200}
                     speed={30}
                     eraseSpeed={30}
                     eraseDelay={1500}
                     text={[
-                      `Frontend Developer`,
-                      `Designer`,
-                      `Teacher`,
-                      `Cat Dad`,
+                      `I'm a Frontend Developer`,
+                      `I'm the H Tech Cloud Manager`,
+                      `I have a strong interest in technology.`,
+                      `My focus is on learning backend technologies.`,
                     ]}
                   />
                 </h2>
                 <p className="w-4/5 text-xl md:w-full">
-                  I design and build websites that look good, and work well.
+                  I build and host websites that not only look great, but also perform at a high level.
                 </p>
                 <button
                   className="mt-4 btn-brand btn-lg group"
@@ -635,57 +576,38 @@ export default function Home({ publications }) {
             ref={aboutRef}
           >
             <div className="flex flex-col">
-              <h2 className="text-5xl">About</h2>
+              <h2 className="text-5xl">Who is Herman Makiese?</h2>
               <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
 
               <div className="flex flex-col-reverse items-start w-full md:flex-row">
                 <div className="flex flex-col w-full md:pr-8 md:w-3/5">
                   <p className="text-lg">
-                    Hello! I&apos;m Dan and I&apos;m a frontend developer,
-                    designer and teacher from Bristol, England.
+                    Herman Makiese is a web developer and entrepreneur from DRC actually living in Rostov, Russia. He is
+                    a computer science student specializing in cyber security. He has a passion for building web
+                    applications that are both beautiful and functional, and he&apos;s always looking for new challenges
+                    to push his skills to the next level.
                   </p>
                   <p className="text-lg">
-                    After building my first website aged thirteen, I knew I
-                    wanted to work with computers and technology, and I&apos;ve
-                    never looked back.
+                    In addition to his work as a web developer, Herman also owns and operates a web hosting company.
+                    Through this venture, he has gained valuable experience in server management, website optimization,
+                    and security. He&apos;s proud to say that they&apos;ve helped hundreds of businesses get their websites online,
+                    and they continue to provide top-notch service to their clients. Herman is committed to delivering
+                    the highest level of customer service and ensuring that his clients&apos; websites are always up and
+                    running smoothly.
                   </p>
                   <p className="text-lg">
-                    After graduating University with a Media degree, I began
-                    freelancing as a designer, creating graphics, video content
-                    and websites for small businesses, using content management
-                    systems like Wordpress, Joomla and Squarespace.
-                  </p>
-                  <p className="text-lg">
-                    In recent years, I&apos;ve been focused on programming,
-                    building a solid frontend stack and creating exciting
-                    projects that solve real-world problems.
-                  </p>
-                  <p className="text-lg">
-                    Alongside my design and development work, I run a BA Media
-                    Production degree course and a corporate video production
-                    company called{" "}
-                    <a
-                      href="http://www.wearespotlight.co.uk"
-                      target="_blank"
-                      className="underline-link"
-                      rel="noreferrer"
-                    >
-                      Spotlight Media
-                    </a>
-                    , so I like to keep busy!
-                  </p>
-                  <p className="text-lg">
-                    Take a look at my work below to see what I&apos;m working
-                    on, and get in touch if you&apos;d like to work together!
+                    Herman is excited about the future of technology and the role that he can play in shaping it. If you
+                    have any questions or are interested in working together, please don&apos;t hesitate to reach out.
+                    Take a look at his portfolio to see his work, and get in touch if you&apos;d like to collaborate!
                   </p>
                 </div>
                 <div className="flex w-full h-full mb-4 md:pl-8 md:w-2/5 md:mb-0">
                   <Image
-                    src="/headshot-with-frame-2.jpg"
+                    src="/hmak.jpg"
                     className="overflow-hidden rounded-md"
                     width={880}
-                    height={880}
-                    alt={"Daniel Cranney headshot"}
+                    height={1200}
+                    alt={"Herman headshot"}
                   />
                 </div>
               </div>
@@ -723,22 +645,6 @@ export default function Home({ publications }) {
               <Icon
                 IconType={Css}
                 title="CSS"
-                width={"w-16 sm:w-20"}
-                height={"h-16 sm:h-20"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Tailwind */}
-              <Icon
-                IconType={Tailwind}
-                title="Tailwind"
                 width={"w-16 sm:w-20"}
                 height={"h-16 sm:h-20"}
                 padding={"p-0"}
@@ -831,22 +737,6 @@ export default function Home({ publications }) {
                 fixedHeight={"h-28"}
               />
 
-              {/* Supabase */}
-              <Icon
-                IconType={Supabase}
-                title="Supabase"
-                width={"w-16 sm:w-20"}
-                height={"h-16 sm:h-20"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
               {/* MongoDb */}
               <Icon
                 IconType={MongoDb}
@@ -927,10 +817,10 @@ export default function Home({ publications }) {
                 fixedHeight={"h-28"}
               />
 
-              {/* Illustrator */}
+              {/* Python */}
               <Icon
-                IconType={Illustrator}
-                title="Illustrator"
+                IconType={Python}
+                title="Python"
                 width={"w-16 sm:w-20"}
                 height={"h-16 sm:h-20"}
                 padding={"p-0"}
@@ -943,10 +833,10 @@ export default function Home({ publications }) {
                 fixedHeight={"h-28"}
               />
 
-              {/* After Effects */}
+              {/* CSharp */}
               <Icon
-                IconType={AfterEffects}
-                title="After Effects"
+                IconType={Csharp}
+                title="C#"
                 width={"w-16 sm:w-20"}
                 height={"h-16 sm:h-20"}
                 padding={"p-0"}
@@ -959,10 +849,10 @@ export default function Home({ publications }) {
                 fixedHeight={"h-28"}
               />
 
-              {/* Adobe XD */}
+              {/* Php */}
               <Icon
-                IconType={AdobeXd}
-                title="Adobe XD"
+                IconType={Php}
+                title="Php"
                 width={"w-16 sm:w-20"}
                 height={"h-16 sm:h-20"}
                 padding={"p-0"}
@@ -975,11 +865,10 @@ export default function Home({ publications }) {
                 fixedHeight={"h-28"}
               />
 
-              {/* Figma
+              {/* JAva */}
               <Icon
-                IconType={Figma}
-                title="Figma"
-                
+                IconType={Java}
+                title="Java"
                 width={"w-16 sm:w-20"}
                 height={"h-16 sm:h-20"}
                 padding={"p-0"}
@@ -990,7 +879,7 @@ export default function Home({ publications }) {
                 marginRight={"mr-0"}
                 textTransform={"normal-case"}
                 fixedHeight={"h-28"}
-              /> */}
+              />
             </div>
           </section>
 
@@ -1008,50 +897,18 @@ export default function Home({ publications }) {
             <div className="flex flex-col w-full mb-12">
               {/* Project One */}
               <FeaturedProjectCard
-                title={"Reportr"}
-                status={"Just launched"}
-                description={`Write reports for your students in 60 seconds or less`}
+                title={"Country App"}
+                status={""}
+                description={`Explorez le monde avec Country App!`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row`}
                 imgWidth={"1366"}
-                imgHeight={"666"}
-                imgSrc={"/projects/reportr.png"}
-                liveLink={"https://reportr.io/"}
+                imgHeight={"665"}
+                imgSrc={"/projects/countryApp.png"}
+                liveLink={"https://me.htech-cloud.com/myproject/country-app"}
                 repoLink={null}
                 stack={
                   <>
-                    <Icon
-                      IconType={Html}
-                      title="HTML"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
                     <Icon
                       IconType={ReactJs}
                       title="React"
@@ -1069,8 +926,8 @@ export default function Home({ publications }) {
                     />
 
                     <Icon
-                      IconType={NextJs}
-                      title="Next"
+                      IconType={Sass}
+                      title="Sass"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -1088,15 +945,15 @@ export default function Home({ publications }) {
               />
               {/* Project Two */}
               <FeaturedProjectCard
-                title={"ColorHub"}
-                status={"Currently working on"}
-                description={`Create a custom colour palette for your next project. Preview your palette on different layouts and then export the CSS, SCSS or Tailwind code.`}
+                title={"Clone Facebook"}
+                status={""}
+                description={`Découvrez mon projet de clone de la page d'accueil de Facebook!`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row-reverse`}
                 imgWidth={"1366"}
-                imgHeight={"666"}
-                imgSrc={"/projects/colorhub.png"}
-                liveLink={"https://colorhub.app/"}
+                imgHeight={"665"}
+                imgSrc={"/projects/CloneFb.png"}
+                liveLink={"https://me.htech-cloud.com/myproject/country-app"}
                 repoLink={null}
                 stack={
                   <>
@@ -1117,8 +974,8 @@ export default function Home({ publications }) {
                     />
 
                     <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
+                      IconType={Css}
+                      title="CSS3"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -1133,24 +990,8 @@ export default function Home({ publications }) {
                     />
 
                     <Icon
-                      IconType={ReactJs}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={NextJs}
-                      title="Next"
+                      IconType={Javascript}
+                      title="JavaScript"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -1168,16 +1009,16 @@ export default function Home({ publications }) {
               />
               {/* Project Three */}
               <FeaturedProjectCard
-                title={"ProfileMe.dev"}
-                status={"Just launched"}
-                description={`Create an awesome GitHub profile in minutes.`}
+                title={"OuiTube"}
+                status={""}
+                description={`Découvrez OuiTube, mon projet de clone de la page YouTube!`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row`}
                 imgWidth={"1366"}
-                imgHeight={"666"}
-                imgSrc={"/projects/profileme.png"}
-                liveLink={"https://profileme.dev"}
-                repoLink={"https://github.com/danielcranney/profileme.dev"}
+                imgHeight={"665"}
+                imgSrc={"/projects/CloneYtb.png"}
+                liveLink={"https://me.htech-cloud.com/myproject/ouitube"}
+                repoLink={"https://github.com/hollerith47/clone-youtube"}
                 stack={
                   <>
                     <Icon
@@ -1197,8 +1038,8 @@ export default function Home({ publications }) {
                     />
 
                     <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
+                      IconType={Css}
+                      title="CSS3"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -1213,24 +1054,8 @@ export default function Home({ publications }) {
                     />
 
                     <Icon
-                      IconType={ReactJs}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={NextJs}
-                      title="Next"
+                      IconType={Javascript}
+                      title="Javascript"
                       columnSizing={"w-auto"}
                       width={"w-6"}
                       height={"h-6"}
@@ -1246,16 +1071,211 @@ export default function Home({ publications }) {
                   </>
                 }
               />
+  
+              {/* Project Four */}
+              <FeaturedProjectCard
+                  title={"Cooking App"}
+                  status={""}
+                  description={`Explorez le monde de la cuisine avec Cooking App ! Avec React, Axios et Sass, découvrez des recettes savoureuses`}
+                  float={`right-0`}
+                  flexDirection={`flex-col lg:flex-row-reverse`}
+                  imgWidth={"1366"}
+                  imgHeight={"665"}
+                  imgSrc={"/projects/cookingApp.png"}
+                  liveLink={"https://me.htech-cloud.com/myproject/cooking-app"}
+                  repoLink={null}
+                  stack={
+                    <>
+                      <Icon
+                          IconType={Html}
+                          title="HTML"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+          
+                      <Icon
+                          IconType={Css}
+                          title="CSS3"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+          
+                      <Icon
+                          IconType={Javascript}
+                          title="Javascript"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+                    </>
+                  }
+              />
+  
+              {/* Project Five */}
+              <FeaturedProjectCard
+                  title={"H Tech mini-portfolio"}
+                  status={"H Tech Landing page"}
+                  description={`Mon projet web mini portfolio, conçu avec les technologies React et Sass, offre un design épuré et dynamique agrémenté d'effets interactifs captivants. Des animations soignées ajoutent une touche de vie et de mouvement à l'ensemble, pour une expérience utilisateur immersive et stimulante.`}
+                  float={`right-0`}
+                  flexDirection={`flex-col lg:flex-row`}
+                  imgWidth={"1366"}
+                  imgHeight={"665"}
+                  imgSrc={"/projects/vitrine.png"}
+                  liveLink={"https://me.htech-cloud.com/myproject/mini-portfolio"}
+                  repoLink={null}
+                  stack={
+                    <>
+                      <Icon
+                          IconType={ReactJs}
+                          title="React"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+          
+                      <Icon
+                          IconType={Sass}
+                          title="Sass"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+          
+                      <Icon
+                          IconType={"n"}
+                          title="Axios API"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+                    </>
+                  }
+              />
+  
+              {/* Project Six */}
+              <FeaturedProjectCard
+                  title={"My Portfolio"}
+                  status={"Herman Makiese's presentation"}
+                  description={`Mon projet web mini portfolio, conçu avec les technologies React, NextJs, Tailwind et Sass, offre un design épuré et dynamique agrémenté d'effets interactifs captivants. Des animations soignées ajoutent une touche de vie et de mouvement à l'ensemble, pour une expérience utilisateur immersive et stimulante.`}
+                  float={`right-0`}
+                  flexDirection={`flex-col lg:flex-row-reverse`}
+                  imgWidth={"1366"}
+                  imgHeight={"665"}
+                  imgSrc={"/projects/myportfolio.png"}
+                  liveLink={"https://me.htech-cloud.com"}
+                  repoLink={null}
+                  stack={
+                    <>
+                      <Icon
+                          IconType={ReactJs}
+                          title="React"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+          
+                      <Icon
+                          IconType={NextJs}
+                          title="Next"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+          
+                      <Icon
+                          IconType={Tailwind}
+                          title="Tailwind"
+                          columnSizing={"w-auto"}
+                          width={"w-6"}
+                          height={"h-6"}
+                          flexDirection={"flex-row"}
+                          padding={"p-0"}
+                          titleMargins={"my-0 ml-1"}
+                          titleSize={"text-sm"}
+                          marginBottom={"mb-4"}
+                          marginRight={"mr-3"}
+                          textTransform={"uppercase"}
+                          fixedHeight={"h-auto"}
+                      />
+                    </>
+                  }
+              />
             </div>
 
             {/* Other Projects header */}
-            <h2 className="text-4xl text-center">Other Projects</h2>
+            <h2 className="text-4xl text-center">Projects Description </h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 mx-auto border-0"></hr>
             <p className="mb-16 text-lg text-center">
-              Check out some of the projects I&apos;ve been a part of...
+              Take a look at a few of the projects I&apos;ve contributed to...
             </p>
 
-            {/* Other Projects Container */}
+            {/* Projects Description Container */}
             <div className="grid grid-flow-row grid-rows-2 gap-4 grid-col-1 lg:grid-cols-3">
               {projects.map(function (project, i) {
                 return <ProjectCard project={project} key={i} />;
@@ -1272,8 +1292,27 @@ export default function Home({ publications }) {
             {/* Blog header */}
             <h2 className="text-5xl">Blog</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
+            <div className="flex flex-col-reverse w-full md:flex-row">
+              <div className="w-full mb-4 md:pl-0 md:mb-0">
+                <p className="text-lg">
+                  I&apos;m thrilled that you&apos;re here. As you browse through
+                  my site, you&apos;ll discover more about me, my interests, and
+                  what I have to offer. However, if you&apos;re looking for more
+                  in-depth insights, tips, and ideas, I invite you to explore my
+                  blog. From thought-provoking articles and inspiring stories to
+                  helpful resources and practical advice, my blog is a treasure
+                  trove of valuable information that can help you grow, learn,
+                  and succeed. So why not grab a cup of coffee, sit back, and
+                  enjoy some quality reading time on my blog? I promise you
+                  won&apos;t be disappointed!{" "}
+                  <Link href="https://blog.htech-cloud.com/">
+                    <a className="underline-link">go to my blog</a>
+                  </Link>
+                </p>
+              </div>
+            </div>
 
-            <BlogList publications={publications} />
+            {/*<BlogList publications={publications} />*/}
           </section>
 
           {/* Contact */}
@@ -1288,15 +1327,16 @@ export default function Home({ publications }) {
             <div className="flex flex-col-reverse w-full md:flex-row">
               <div className="w-full mb-4 md:pl-0 md:mb-0">
                 <p className="text-lg">
-                  I&apos;m currently available to get involved in new projects,
-                  so get in touch if you&apos;d like to work together.
+                  At present, I&apos;m open to participating in fresh ventures,
+                  so don&apos;t hesitate to reach out if you&apos;re interested
+                  in collaborating.
                 </p>
                 <p className="text-lg">
-                  Email me at{" "}
-                  <Link href="mailto:danielcranney@gmail.com">
-                    <a className="underline-link">danielcranney@gmail.com</a>
+                  Please feel free to email me at{" "}
+                  <Link href="mailto:makieseherman@gmail.com">
+                    <a className="underline-link">makieseherman@gmail.com</a>
                   </Link>{" "}
-                  and let&apos;s talk about your project!
+                  and we can discuss the details of your project together!
                 </p>
               </div>
             </div>
@@ -1334,8 +1374,7 @@ export default function Home({ publications }) {
 
             <div className="flex flex-col items-start md:flex-row">
               <p className="w-auto mb-4 md:mb-0">
-                &copy; {new Date().getFullYear()} - Designed and built by Daniel
-                Cranney
+                &copy; {new Date().getFullYear()} - Hmak47
               </p>
 
               <div className="flex md:hidden">
