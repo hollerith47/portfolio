@@ -86,6 +86,15 @@ const projects = [
     repo: null,
     isSiteLive: true,
   },
+  {
+    title: "Mon portfolio",
+    overview:
+        "Mon mini portfolio est un projet web dynamique réalisé avec React et Sass. Il présente un design épuré avec des effets de souris interactifs et des animations qui le rendent vivant. Avec une mise en page claire et concise, ce mini portfolio met en valeur mes compétences et mon expertise de manière engageante et conviviale.",
+    stack: ["React", "NextJs", "Tailwind"],
+    link: "https://me.htech-cloud.com/myproject/mini-portfolio",
+    repo: "https://github.com/hollerith47/portfolio",
+    isSiteLive: true,
+  },
 ];
 
 const getDimensions = (ele) => {
