@@ -915,7 +915,7 @@ export default function Home({ publications }) {
                     imgWidth={"1366"}
                     imgHeight={"665"}
                     imgSrc={"/projects/countryApp.png"}
-                    liveLink={"https://me.htech-cloud.com/myproject/country-app"}
+                    liveLink={"https://countryappr.netlify.app"}
                     repoLink={null}
                     stack={
                       <>
@@ -963,7 +963,7 @@ export default function Home({ publications }) {
                     imgWidth={"1366"}
                     imgHeight={"665"}
                     imgSrc={"/projects/CloneFb.png"}
-                    liveLink={"https://me.htech-cloud.com/myproject/country-app"}
+                    liveLink={"https://myproject.htech-cloud.com/cl-fblogin/"}
                     repoLink={null}
                     stack={
                       <>
@@ -1027,7 +1027,7 @@ export default function Home({ publications }) {
                     imgWidth={"1366"}
                     imgHeight={"665"}
                     imgSrc={"/projects/CloneYtb.png"}
-                    liveLink={"https://me.htech-cloud.com/myproject/ouitube"}
+                    liveLink={"https://ouitube.netlify.app"}
                     repoLink={"https://github.com/hollerith47/clone-youtube"}
                     stack={
                       <>
@@ -1092,7 +1092,7 @@ export default function Home({ publications }) {
                     imgWidth={"1366"}
                     imgHeight={"665"}
                     imgSrc={"/projects/cookingApp.png"}
-                    liveLink={"https://me.htech-cloud.com/myproject/cooking-app"}
+                    liveLink={"https://cookwithapi.netlify.app/"}
                     repoLink={null}
                     stack={
                       <>
@@ -1157,7 +1157,7 @@ export default function Home({ publications }) {
                     imgWidth={"1366"}
                     imgHeight={"665"}
                     imgSrc={"/projects/vitrine.png"}
-                    liveLink={"https://me.htech-cloud.com/myproject/mini-portfolio"}
+                    liveLink={"https://minportfoliohmak.netlify.app"}
                     repoLink={null}
                     stack={
                       <>
@@ -1222,7 +1222,7 @@ export default function Home({ publications }) {
                     imgWidth={"1366"}
                     imgHeight={"665"}
                     imgSrc={"/projects/myportfolio.png"}
-                    liveLink={"https://me.htech-cloud.com"}
+                    liveLink={"/"}
                     repoLink={"https://github.com/hollerith47/portfolio"}
                     stack={
                       <>
@@ -1278,7 +1278,7 @@ export default function Home({ publications }) {
                 />
               </div>
               
-              {/* Other Projects header */}
+              {/* Projects descriptions header */}
               <h2 className="text-4xl text-center">Projects Description </h2>
               <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 mx-auto border-0"></hr>
               <p className="mb-16 text-lg text-center">
