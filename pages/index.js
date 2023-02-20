@@ -383,6 +383,7 @@ export default function Home({ publications }) {
           <div className="container relative flex items-center mx-auto">
             {/* Logo */}
             <div className="z-50 w-9 sm:w-12 h-9 sm:h-12 flex items-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="Htech_favicon.svg" alt="H tech" />
             </div>
             {/* Text */}
