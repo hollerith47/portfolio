@@ -67,7 +67,7 @@
     text-center
     font-semibold rounded-sm
     shadow-none
-   self-start transition-all duration-150 ease-in-out;
+    self-start transition-all duration-150 ease-in-out;
   }
 }
 
@@ -111,7 +111,7 @@
 @layer components {
   .btn-sm-no-text {
     @apply inline-flex h-12 items-center justify-center
-   flex-grow-0
+    flex-grow-0
     text-center
     font-semibold rounded-sm
     shadow-none
