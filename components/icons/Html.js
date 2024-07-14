@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import html from "../../assets/icons/html5.svg"
 
 const Html = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/html5.svg"}
+          src={html}
           alt={"Html"}
       />
     

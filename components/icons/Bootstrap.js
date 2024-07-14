@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import bootstrap from "../../assets/icons/bootstrap.svg"
+
 
 const Bootstrap = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/bootstrap.svg"}
+          src={bootstrap}
           alt={"Bootstrap"}
       />
   );

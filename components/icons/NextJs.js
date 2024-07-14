@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import nextjs from "../../assets/icons/nextjs.svg";
+
 
 const NextJs = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/nextjs.svg"}
+          src={nextjs}
           alt={"NextJs"}
       />
   );

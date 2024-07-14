@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import nodejs from "../../assets/icons/nodejs.svg";
+
 
 const NodeJs = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/nodejs.svg"}
+          src={nodejs}
           alt={"Node"}
       />
   );

@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import java from "../../assets/icons/java.svg";
+
 
 const Java = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/java.svg"}
+          src={java}
           alt={"PhotoShop"}
       />
   );

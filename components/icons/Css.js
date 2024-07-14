@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import css from "../../assets/icons/css3.svg"
 
 const Css = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/css3.svg"}
+          src={css}
           alt={"CSS"}
       />
   );

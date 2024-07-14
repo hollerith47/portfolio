@@ -28,6 +28,7 @@ import NeedHelpButton from "../components/NeedHelpButton";
 import Sections from "../Sections";
 import MobileNav from "../components/Navbar/MobileNav";
 import DesktopItems from "../components/Navbar/DesktopItems";
+import ReactTypingEffect from "react-typing-effect";
 
 
 const getDimensions = (ele) => {

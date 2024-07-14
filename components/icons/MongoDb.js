@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import mongodb from "../../assets/icons/mongodb.svg";
+
 
 const MongoDb = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/mongodb.svg"}
+          src={mongodb}
           alt={"MongoDB"}
       />
   );

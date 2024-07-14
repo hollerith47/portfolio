@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import php from "../../assets/icons/php.svg";
 
 const Php = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/php.svg"}
+          src={php}
           alt={"PHP"}
       />
   );
