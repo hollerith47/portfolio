@@ -1,0 +1,18 @@
+<svg id="FAvicon" xmlns="http://www.w3.org/2000/svg" width="384" height="405" viewBox="0 0 384 405">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3b34e0;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 320px;
+        fill: #fff;
+        font-family: "DejaVu Sans";
+      }
+    </style>
+  </defs>
+  <path id="форма_1_copie" data-name="форма 1 copie" class="cls-1" d="M342.6,315.5L140.044,375.908,20,201.931,148.366,34l199.379,70.19Z"/>
+  <text id="H_copie" data-name="H copie" class="cls-2" x="85.745" y="323.69">H</text>
+</svg>

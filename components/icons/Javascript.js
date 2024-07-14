@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import javascript from "../../assets/icons/Javascript.svg"
 
 const Javascript = () => {
   return (
       <Image
-          layout="fill"
-          src={"/icons/Javascript.svg"}
+          src={javascript}
           alt={"JavaScript"}
       />
   );
