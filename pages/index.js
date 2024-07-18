@@ -269,7 +269,7 @@ export default function Home({publications}) {
                     <Sections
                         aboutRef={aboutRef}
                         scrollTo={scrollTo}
-                        // homeRef={homeRef}
+                        homeRef={homeRef}
                         myWorkRef={myWorkRef}
                         skillsRef={skillsRef}
                     />
