@@ -6,11 +6,11 @@ const Sections = ({myWorkRef, scrollTo, homeRef, aboutRef, skillsRef}) => {
     return (
         <>
             {/* Hero */}
-            <Hero
-                myWorkRef={myWorkRef}
-                scrollTo={scrollTo}
-                homeRef={homeRef}
-            />
+            {/*<Hero*/}
+            {/*    myWorkRef={myWorkRef}*/}
+            {/*    scrollTo={scrollTo}*/}
+            {/*    homeRef={homeRef}*/}
+            {/*/>*/}
 
             {/* About */}
             <About aboutRef={aboutRef}/>
