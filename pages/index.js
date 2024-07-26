@@ -170,7 +170,7 @@ export default function Home({publications}) {
                     navbarOpen ? "overflow-hidden" : "overflow-auto"
                 }`}
             >
-                <HeaderData/>
+                {/*<HeaderData/>*/}
                 {/* mobile-screen Menu */}
                 <MobileNav
                     scrollTo={scrollTo}
