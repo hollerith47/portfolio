@@ -20,7 +20,6 @@ import HeaderData from "../components/Metadata/headerData";
 
 // Images
 import Logo from "../components/Logo";
-import {navbarItems} from "../_data/_navbar";
 import {skills} from "../_data/_Skills";
 import MobileMenuButton from "../components/Navbar/MobileMenuButton";
 import ThemeSwitcherButton from "../components/themeSwitcherButton";
