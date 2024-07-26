@@ -409,6 +409,8 @@ export default function Home({publications}) {
                             className="absolute bottom-0 items-center hidden mt-auto ml-auto text-white right-8 md:flex md:flex-col">
                             {/* Hero - Diamond 1 */}
                             <button
+                                aria-labelledby="hero-btn"
+                                id="hero-btn"
                                 className="w-5 h-5 mb-4"
                                 onClick={() => {
                                     scrollTo(homeRef.current);
@@ -448,6 +450,8 @@ export default function Home({publications}) {
                             </button>
                             {/* About - Diamond 2 */}
                             <button
+                                aria-labelledby="about-btn"
+                                id="about-btn"
                                 className="w-5 h-5 mb-4"
                                 onClick={() => {
                                     scrollTo(aboutRef.current);
@@ -487,6 +491,8 @@ export default function Home({publications}) {
                             </button>
                             {/* Index - Diamond 3 */}
                             <button
+                                aria-labelledby="skill-btn"
+                                id="skill-btn"
                                 className="w-5 h-5 mb-4"
                                 onClick={() => {
                                     scrollTo(skillsRef.current);
@@ -526,6 +532,8 @@ export default function Home({publications}) {
                             </button>
                             {/* My Work - Diamond 4 */}
                             <button
+                                aria-labelledby="my-work-btn"
+                                id="my-work-btn"
                                 className="w-5 h-5 mb-4"
                                 onClick={() => {
                                     scrollTo(myWorkRef.current);
@@ -565,6 +573,8 @@ export default function Home({publications}) {
                             </button>
                             {/* Blog - Diamond 5 */}
                             <button
+                                aria-labelledby="blog-btn"
+                                id="blog-btn"
                                 className="w-5 h-5 mb-4"
                                 onClick={() => {
                                     scrollTo(blogRef.current);
@@ -604,6 +614,8 @@ export default function Home({publications}) {
                             </button>
                             {/* Contact - Diamond 6 */}
                             <button
+                                aria-labelledby="contact"
+                                id="contact"
                                 className="w-5 h-5 mb-4"
                                 onClick={() => {
                                     scrollTo(contactRef.current);

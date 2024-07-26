@@ -2,6 +2,8 @@ const MobileMenuButton = ({setNavbarOpen, navbarOpen}) => {
     return (
         <>
             <button
+                aria-label="Toggle Navigation" // Ajout de l'aria-label descriptif
+                id="switch-navbar"
                 className={`relative w-10 h-10 ${
                     navbarOpen
                         ? "dark:text-white text-dark"
@@ -10,12 +12,12 @@ const MobileMenuButton = ({setNavbarOpen, navbarOpen}) => {
                 onClick={() => setNavbarOpen(!navbarOpen)}
             >
                 <div className="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-                      <span
-                          aria-hidden="true"
-                          className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${
-                              navbarOpen ? "rotate-45" : "-translate-y-1.5"
-                          }`}
-                      ></span>
+        <span
+            aria-hidden="true"
+            className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${
+                navbarOpen ? "rotate-45" : "-translate-y-1.5"
+            }`}
+        ></span>
                     <span
                         aria-hidden="true"
                         className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${

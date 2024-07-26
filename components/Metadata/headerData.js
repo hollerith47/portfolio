@@ -10,7 +10,7 @@ const HeaderData = () => {
                 name="description"
                 content="Portfolio de Herman Makiese deleloppeur web fullstack et application mobile"
             />
-            <link rel="icon" href="/favicon.ico"/>
+            <link rel="icon" href="./favicon.ico"/>
             {/*// <!-- Open Graph : sert à être plus visible sur les réseaux -->*/}
             <meta property="og:title" content="Herman Makiese developpeur fullstack portfolio"/>
             <meta property="og:type" content="video.movie"/>
