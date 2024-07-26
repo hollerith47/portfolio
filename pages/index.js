@@ -16,7 +16,6 @@ import {useTheme} from "next-themes";
 import {_Projects} from "../_data/_Projects";
 import {blog} from "../_data/_Blog";
 import ThemeModeIcon from "../components/themeModeIcon";
-import HeaderData from "../components/Metadata/headerData";
 
 // Images
 import Logo from "../components/Logo";
@@ -28,6 +27,7 @@ import Sections from "../Sections";
 import MobileNav from "../components/Navbar/MobileNav";
 import DesktopItems from "../components/Navbar/DesktopItems";
 import ReactTypingEffect from "react-typing-effect";
+import HeaderData from "../components/Metadata/headerData";
 
 
 const getDimensions = (ele) => {
@@ -56,6 +56,7 @@ export default function Home({publications}) {
     const [isMobile, setIsMobile] = useState(false);
     const [mounted, setMounted] = useState(false);
     const {systemTheme, theme, setTheme} = useTheme();
+
 
     const handleResize = () => {
         if (window.innerWidth < 1024) {
@@ -128,10 +129,6 @@ export default function Home({publications}) {
 
     const currentTheme = theme === "system" ? systemTheme : theme;
 
-    useEffect(() => {
-        console.log(currentTheme);
-    }, [currentTheme]);
-
     const renderThemeChanger = () => {
         if (!mounted) return null;
 
@@ -170,7 +167,7 @@ export default function Home({publications}) {
                     navbarOpen ? "overflow-hidden" : "overflow-auto"
                 }`}
             >
-                {/*<HeaderData/>*/}
+                <HeaderData/>
                 {/* mobile-screen Menu */}
                 <MobileNav
                     scrollTo={scrollTo}

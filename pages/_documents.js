@@ -1,17 +1,21 @@
-import {Html, Main, NextScript} from "next/document";
-import HeaderData from "../components/Metadata/headerData";
+import {Html, Main,Head, NextScript} from "next/document";
 import {i18n} from "next-i18next";
 import {useRouter} from "next/router";
 import React from "react";
+import { useEffect, useState } from 'react';
 
 
 export default function Document() {
-    const {locale} = useRouter();
-    const lang = locale || i18n.language;
-    
+    const { locale } = useRouter();
+    const [language, setLanguage] = useState(locale || 'en');
+
+    useEffect(() => {
+        setLanguage(locale || 'en');
+    }, [locale]);
+
     return (
-        <Html lang={this.props.__NEXT_DATA__.props.initialLanguage}>
-            <HeaderData/>
+        <Html lang={language}>
+            {/*<HeaderData/>*/}
             <body>
             <Main/>
             <NextScript/>
@@ -20,7 +24,8 @@ export default function Document() {
     )
 }
 
-export async function getInitialProps(ctx) {
+Document.getInitialProps = async (ctx) => {
     const initialProps = await ctx.defaultGetInitialProps(ctx);
-    return { ...initialProps };
-}
+    const initialLanguage = i18n.language || 'en'; // La langue par défaut est 'en'
+    return { ...initialProps, initialLanguage };
+};
