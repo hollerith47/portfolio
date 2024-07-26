@@ -12,9 +12,34 @@ import countryApp from "../public/projects/countryApp.png";
 import facebookClone from "../public/projects/CloneFb.png";
 import youtubeClone from "../public/projects/CloneYtb.png";
 import portfolio from "../public/projects/myportfolio.png";
+import crypto from "../public/projects/crypto-watch.png";
 
 
 export const _Projects = [
+    {
+        title: "Crypto Panel",
+        overview:
+            "le monde de crypto monnaie grace a mon dashboard crypto ! Répertoriant different crypto monnaie par marketCap avec la possibilités de le classer " +
+            "selon leurs performances journalière, hebdomadaire, etc de manière ascendante ou descendante.",
+        stack: ["React", "Sass", "AXIOS"],
+        description: "Explorez le monde de crypto monnaie grace a mon dashboard crypto creer avec l'API de coin Gecko.",
+        status: "",
+        direction: "flex-col lg:flex-row-reverse",
+        imgSrc: crypto,
+        link: "https://htech-crypto-watch.netlify.app",
+        repo: "https://github.com/hollerith47/crypto-watch",
+        isSiteLive: true,
+        icons: [
+            {
+                icon: ReactJs,
+                title: "React"
+            },
+            {
+                icon: Sass,
+                title: "Sass"
+            },
+        ]
+    },
     {
         title: "Country App",
         overview:
