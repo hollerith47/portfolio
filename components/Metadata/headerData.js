@@ -4,6 +4,7 @@ const HeaderData = () => {
     return (
         <>
             <Head>
+                <html lang="en" />
                 <meta charSet="UTF-8"/>
                 <title>Herman Makiese | FullStack Web Developer, Application mobile native</title>
                 <meta
