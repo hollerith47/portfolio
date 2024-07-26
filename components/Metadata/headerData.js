@@ -1,10 +1,9 @@
 import Head from "next/head";
 
 const HeaderData = () => {
+
     return (
-        <>
             <Head>
-                <html lang="en" />
                 <meta charSet="UTF-8"/>
                 <title>Herman Makiese | FullStack Web Developer, Application mobile native</title>
                 <meta
@@ -20,7 +19,6 @@ const HeaderData = () => {
                       content="Portfolio de Herman Makiese deleloppeur web fullstack et application mobile"/>
                 <meta property="og:image" content="/projects/myportfolio.png"/>
             </Head>
-        </>
     );
 };
 
