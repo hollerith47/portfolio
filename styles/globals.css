@@ -178,8 +178,8 @@ html {
   align-items: stretch;
 }
 
-@media (max-width: 600px) {
-  .skills-card {
-    flex-direction: column;
-  }
+.skills-card img{
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
 }
