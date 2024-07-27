@@ -32,7 +32,7 @@ const SkillsContainer = ({skillsRef}) => {
             >
                 <h2 className="text-5xl">Skills</h2>
                 <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
-                <div className="w-full flex flex-wrap items-stretch">
+                <div className="skills-card">
                     {skills.map(({title,icon}, index)=>(
                         <SkillsCard title={title} icon={icon} key={index} />
                     ))}
