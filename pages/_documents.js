@@ -26,6 +26,6 @@ export default function Document() {
 
 Document.getInitialProps = async (ctx) => {
     const initialProps = await ctx.defaultGetInitialProps(ctx);
-    const initialLanguage = i18n.language || 'en'; // La langue par défaut est 'en'
+    const initialLanguage = i18n.language || 'en';
     return { ...initialProps, initialLanguage };
 };
